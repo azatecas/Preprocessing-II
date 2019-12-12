@@ -5,10 +5,26 @@ nav {
 
     .nav-con {
         .flex(row, space-between);
+
+        @media @phone {
+            .flex(column, space-between);
+            
+        }
     }
 
     .nav-logo {
         width:25%;
+        @media @phone {
+            width:100%;
+            
+        }//end of media query
+        h1 {
+            @media @phone {
+                text-align: center;
+                padding:0 0 1vh 0;
+            }//end of h1 media query   
+
+        }// end of h1
         
     }//end of Nav-Log0
 
@@ -23,6 +39,10 @@ nav {
             text-decoration: none;
 
         }//end of anchor 
+        @media @phone {
+            width:100%;
+        }
+
     }//end of Nav-Links   
 
 }
