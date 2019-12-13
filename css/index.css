@@ -317,21 +317,36 @@ nav .nav-links a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    align-items: left;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+  }
+}
 .home .btn {
   width: 90%;
-  background-color: #20777a;
+  background-color: #0ea2b6;
   color: white;
   font-size: 1.8rem;
   text-align: center;
   padding: 1.2rem;
-  border-radius: 20px;
+  border-radius: 12px;
 }
 .home .btn:hover {
-  background-color: #36c5ca;
+  background-color: #3adaf0;
+}
+@media (max-width: 500px) {
+  .home .btn {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .home {

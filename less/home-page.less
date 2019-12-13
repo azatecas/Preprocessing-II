@@ -96,14 +96,26 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @phone {
+      align-items: left;
+      
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @phone {
+        width:80%;
+      }
     }
   }
   .btn {
-    .btnStyle(rgb(32, 119, 122), white);
+    .btnStyle(rgb(14, 162, 182), white);
+
+    @media @phone {
+      width:100%;
+    }
   }
 
 
