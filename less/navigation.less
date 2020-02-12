@@ -1,1 +1,48 @@
 // Navigation Styles here
+nav {    
+    padding: 2vh 0;
+    border-bottom: 2px dashed rgb(206, 206, 206);
+
+    .nav-con {
+        .flex(row, space-between);
+
+        @media @phone {
+            .flex(column, space-between);
+            
+        }
+    }
+
+    .nav-logo {
+        width:25%;
+        @media @phone {
+            width:100%;
+            
+        }//end of media query
+        h1 {
+            @media @phone {
+                text-align: center;
+                padding:0 0 1vh 0;
+            }//end of h1 media query   
+
+        }// end of h1
+        
+    }//end of Nav-Log0
+
+    .nav-links {
+        
+        .flex(row,space-around);   
+        width: 50%;
+
+        a {
+            color: black;
+            font-size: 1.6rem;
+            text-decoration: none;
+
+        }//end of anchor 
+        @media @phone {
+            width:100%;
+        }
+
+    }//end of Nav-Links   
+
+}

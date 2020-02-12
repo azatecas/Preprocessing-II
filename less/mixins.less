@@ -1,1 +1,32 @@
 // Mixins in here
+
+
+//flexbox styling
+.flex(@direction, @justify){
+    display: flex;
+    flex-direction: @direction;
+    align-items: center;
+    justify-content: @justify;
+    
+}//end of flex styling
+
+
+
+
+
+
+// button styling
+.btnStyle(@bgColor,@txtColor){
+    width: 90%;
+    background-color: @bgColor;
+    color: @txtColor;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 1.2rem;
+    border-radius: 12px;
+
+    &:hover {
+        background-color:lighten(@bgColor, 20%);
+    }
+
+}// <-------end of .btgStyle-------->
